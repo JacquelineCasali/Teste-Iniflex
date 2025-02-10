@@ -43,8 +43,7 @@ Diante disso, você deve desenvolver um projeto java, com os seguintes requisito
 ## 🛠 Tecnologias utilizadas
 
 - **[Java 17]**
-- **[Spring Boot]**
-- **[Maven]**
+
 
 
 ## Como executar o projeto
@@ -52,7 +51,7 @@ Diante disso, você deve desenvolver um projeto java, com os seguintes requisito
 Pré-requisitos: Java 17
 
 # clonar repositório
-git clone git remote add origin https://github.com/JacquelineCasali/Teste-Pr-tico---Iniflex.git
+git clone https://github.com/JacquelineCasali/Teste-Pr-tico---Iniflex.git
 
 
 Autora
