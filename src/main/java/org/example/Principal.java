@@ -6,6 +6,8 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Principal {
     public static void main(String[] args) {
@@ -35,17 +37,21 @@ public class Principal {
         funcionarios.forEach(System.out::println);
 
       //  3.4 – Os funcionários receberam 10% de aumento de salário, atualizar a lista de funcionários com novo valor.
-
-
-
-        funcionarios.forEach(funcionario ->
+      funcionarios.forEach(funcionario ->
                 funcionario.setSalario(funcionario.getSalario().multiply(new BigDecimal("1.10"))));
         System.out.println("Funcionários com Aumento:");
         funcionarios.forEach(System.out::println);
 
+       // 3.5 – Agrupar os funcionários por função em um MAP, sendo a chave a “função” e o valor a “lista de funcionários”.
+        Map<String, List<Funcionario>> agruparPorFuncao =funcionarios.stream().collect(Collectors.groupingBy(Funcionario::getFuncao));
 
+       // 3.6 – Imprimir os funcionários, agrupados por função.
 
-
+        System.out.println("\nFuncionários agrupados por função:");
+        agruparPorFuncao.forEach((funcao, lista) -> {
+            System.out.println("Função: " + funcao);
+            lista.forEach(System.out::println);
+        });
 
         }
 
