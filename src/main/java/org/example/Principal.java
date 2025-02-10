@@ -26,5 +26,29 @@ public class Principal {
 
       //  3.2 – Remover o funcionário “João” da lista.
         funcionarios.removeIf(funcionario -> funcionario.getNome().equals("João"));
+        funcionarios.forEach(System.out::println);
+
+//        3.3 – Imprimir todos os funcionários com todas suas informações, sendo que:
+//• informação de data deve ser exibido no formato dd/mm/aaaa;
+//• informação de valor numérico deve ser exibida no formatado com separador de milhar como ponto e decimal como vírgula.
+        System.out.println("Funcionários:");
+        funcionarios.forEach(System.out::println);
+
+      //  3.4 – Os funcionários receberam 10% de aumento de salário, atualizar a lista de funcionários com novo valor.
+
+
+
+        funcionarios.forEach(funcionario ->
+                funcionario.setSalario(funcionario.getSalario().multiply(new BigDecimal("1.10"))));
+        System.out.println("Funcionários com Aumento:");
+        funcionarios.forEach(System.out::println);
+
+
+
+
+
         }
+
+
+
     }
