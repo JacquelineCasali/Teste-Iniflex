@@ -45,13 +45,8 @@ Diante disso, você deve desenvolver um projeto java, com os seguintes requisito
 - **[Java 17]**
 
 
-
-## Como executar o projeto
-
-Pré-requisitos: Java 17
-
 # clonar repositório
-git clone https://github.com/JacquelineCasali/Teste-Pr-tico---Iniflex.git
+git clone https://github.com/JacquelineCasali/Teste-Iniflex
 
 
 Autora
